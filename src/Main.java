@@ -39,6 +39,11 @@ public class Main {
 	}
 	
 	void play() {
+		/*
+		 * player akan mendapatkan random role number
+		 * 1. crewmate
+		 * 2. impostor
+		 * */
 		do {
 			System.out.print("Masukkan nama : ");name=scan.nextLine();
 		} while (name.length()<0||name.length()>8);
