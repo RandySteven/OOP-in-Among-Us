@@ -61,6 +61,7 @@ public class Main {
 	}
 	
 	void color() {
+		System.out.println("Berikut ini warna dan id nya");
 		System.out.println("1. Red");
 		System.out.println("2. Blue");
 		System.out.println("3. Pink");

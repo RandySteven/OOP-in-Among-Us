@@ -16,12 +16,26 @@ public class Crewmate extends Player implements Task{
 		this.taskCount = taskCount;
 	}
 	
+	//task increment
 	public void addTaskCount(int taskCount) {
 		this.taskCount += taskCount;
 	}
+	
+	/*
+	 * Override
+	 * Dapatnya dari interfaace task
+	 * */
 	@Override
 	public void task(int i) {
+		//Success akan true apabila berhasil menyelesaikan misi
 		boolean success=false;
+		
+		
+		//List misi :
+		//1. Swipe card admin
+		//2. Cable
+		//3. Matematika
+		//4. Tebak angka
 		if(i==1) {
 			int swipeSpeed;
 				do {
@@ -78,6 +92,7 @@ public class Crewmate extends Player implements Task{
 			}
 			success=true;
 		}
+		//Kalau success maka task nya naik
 		if(success=true) {
 			addTaskCount(1);
 		}

@@ -20,7 +20,10 @@ public class Impostor extends Player implements Kill{
 	String color;
 	@Override
 	public void kill(int i) {
+		//Success akan true apabila impostor berhasil membunuh crewmate
 		boolean success=false;
+		//Jadi impostor harus bisa tebak warna nya
+		
 			String killColor;
 			if(i==1) {
 				color = "Red";
